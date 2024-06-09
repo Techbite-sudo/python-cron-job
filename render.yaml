@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: keep-alive-cron
+    schedule: "*/10 * * * *" 
+    startCommand: "python ping_api.py"
+    branch: "master"
+    runtime: go
